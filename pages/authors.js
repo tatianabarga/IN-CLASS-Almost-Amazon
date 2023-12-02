@@ -18,7 +18,7 @@ const showAuthors = (array) => {
     domString += `
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        
+        <p class="card-text bold">${item.favorite ? '<span class="badge badge-info sale-badge"><i class="fa fa-bell" aria-hidden="true"></i> Favorite</span>' : ''}</p>
         <h5 class="card-title">${item.first_name} ${item.last_name}</h5>
         <h6 class="card-subtitle mb-2 text-muted">${item.email}</h6>
         <hr>
